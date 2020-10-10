@@ -1,0 +1,68 @@
+/*Removes Browser default margins and padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*General styles*/
+
+body {
+    
+}
+
+.about, .work, .contact {
+    margin: 20px 75px 20px 150px;
+    display: flex;
+    
+    
+}
+
+.about h2, .work h2, .contact h2 {
+    
+    width: 30%;
+     
+}
+
+/*Header styles*/
+
+/*Hero styles*/
+
+/*About styles*/
+
+/*Work styles*/
+
+
+
+.work-wrapper {
+    display: flex;
+    
+    justify-content: center;
+}
+
+.work-container {
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    
+    display: flex;
+ 
+}
+
+.grid-item img {
+    max-width: 100%;
+}
+
+.grid-item.item-1{
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+}
+
+/*Contact styles*/
+
+/*Resume styles*/
