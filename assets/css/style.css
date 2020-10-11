@@ -94,7 +94,8 @@ header nav ul li a {
 .hero {
     background-image: url("../images/mountains-cover.jpg");
     background-size: cover;
-    height: 700px;
+    background-position: center;
+    height: 130vh;
     padding: 20px 50px;
     
     display: flex;
