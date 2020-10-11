@@ -14,6 +14,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(234, 238, 255);
 }
 
 /*.flex-row {
@@ -91,9 +92,9 @@ header nav ul li a {
 /*Hero styles*/
 
 .hero {
-    background-image: url("../images/portfolio-background-stretch.jpg");
+    background-image: url("../images/mountains-cover.jpg");
     background-size: cover;
-    height: 350px;
+    height: 700px;
     padding: 20px 50px;
     
     display: flex;
@@ -167,13 +168,17 @@ header nav ul li a {
 
 .grid-box {
     flex: 1 85%;
+    height: 500px;
     margin-right: 20px;
+    margin-bottom: 10px;
     padding-top: 10px;
 } 
 
 .work-container {
     display: grid;
-    padding: 20px;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
@@ -181,15 +186,67 @@ header nav ul li a {
 
 .grid-item {
     display: flex;
+    border: 10px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 50%);
+    align-items: flex-end;
 }
 
-.grid-item img {
-    max-width: 100%;
+.grid-item:hover::after {
+    opacity: 1;
 }
+
+.grid-item::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(142, 187, 253, 0.5);  
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.grid-label {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    padding: 20px 5px 20px 20px;
+}
+
+.grid-label h2 {
+    font-size: 24px;
+}
+
 
 .grid-item.item-1{
+    background-image: url("../images/run-buddy-pic.jpg");
+    background-size: cover;
+    width: 100%;
+    
     grid-column: 1/span 2;
     grid-row: 1/span 2;
+}
+
+.grid-item.item-2, .grid-item.item-3, .grid-item.item-4, .grid-item.item-5 {
+    background-size: cover;
+   
+    width: 100%;
+}
+
+.grid-item.item-2 {
+    background-image: url("../images/led-placeholder.jpg");
+}
+.grid-item.item-3 {
+    background-image: url("../images/calculator-placeholder.jpg");
+} 
+.grid-item.item-4 {
+    background-image: url("../images/pastel-placeholder.jpg");
+} 
+.grid-item.item-5 {
+    background-image: url("../images/surf-placeholder.jpg");
 }
 
 /*Contact styles*/
