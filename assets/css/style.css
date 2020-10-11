@@ -18,16 +18,24 @@ body {
 
 
 
-#about, #work, #contact {
-    margin: 20px 75px 20px 150px;
-    display: flex;   
+.about-content, #work, #contact {
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #about h2, #work h2, #contact h2 {
     
-    width: 30%;
-     
+    width: 10%;
+    color: var(--primary-color);
+    
+    padding: 25px;
 }
+
+
 
 /*Header styles*/
 
@@ -93,7 +101,7 @@ header nav ul li a {
 
 /*Hero styles*/
 
-#hero {
+.hero {
     background-image: url("../images/portfolio-background-stretch.jpg");
     background-size: cover;
     height: 350px;
@@ -106,7 +114,7 @@ header nav ul li a {
     width: 100%;   
 }
 
-#hero h2 {
+.hero h2 {
     color: var(--secondary-color);
     background: rgba(15, 42, 94, 70%);
     padding: 25px;
@@ -120,9 +128,19 @@ header nav ul li a {
 
 /*About styles*/
 
-#about img {
+.about-content img {
     width: 20%;
+    display: inline-block;
+    flex-wrap: wrap;
 }
+
+.about-info {
+    border-left: 2px solid var(--primary-color);
+    width: 60%;
+}
+
+
+
 
 /*Work styles*/
 
