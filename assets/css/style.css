@@ -17,15 +17,6 @@ body {
     background-color: var(--tertiary-color);
 }
 
-/*.flex-row {
-    display: flex;
-}*/
-
-
-
-
-
-
 
 /*Header styles*/
 
@@ -36,8 +27,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-     /*I think this is for Safari users
-    position: -webkit-sticky;*/
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -82,8 +71,7 @@ header nav ul li:hover {
 header nav ul li a {
     padding: 10px 10px;
     color: var(--secondary-color);
-    font-size: 1.55vw;;
-  
+    font-size: 24px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 50%);
 }
 
@@ -95,7 +83,7 @@ header nav ul li a {
     background-image: url("../images/mountains-cover.jpg");
     background-size: cover;
     background-position: center;
-    height: 130vh;
+    height: 110vh;
     padding: 20px 50px;
     
     display: flex;
@@ -111,6 +99,7 @@ header nav ul li a {
     padding: 25px;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+    
 }
 
 /*Section Containment ;)*/
@@ -157,7 +146,8 @@ header nav ul li a {
 }
 
 .img-box img {
-    max-width: 100%;
+    max-width: 30vw;
+    min-width: 30vw;
    
 }
 
@@ -211,19 +201,7 @@ header nav ul li a {
 .grid-item:hover {
     background-color:  rgba(142, 187, 253, 0.3);
 }
-/* .grid-item:hover::after {
-    opacity: 1;
-}
 
-.grid-item::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    /* background: rgba(142, 187, 253, 0.5);  
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-} */
 
 .grid-label {
     background-color: var(--secondary-color);
