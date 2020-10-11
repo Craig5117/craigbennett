@@ -5,20 +5,25 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #0f2a5e;
+    --secondary-color: #a3aac9;
+    /*--tertiary-color: ;*/
+}
 /*General styles*/
 
 body {
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.about, .work, .contact {
+
+
+#about, #work, #contact {
     margin: 20px 75px 20px 150px;
-    display: flex;
-    
-    
+    display: flex;   
 }
 
-.about h2, .work h2, .contact h2 {
+#about h2, #work h2, #contact h2 {
     
     width: 30%;
      
@@ -26,9 +31,98 @@ body {
 
 /*Header styles*/
 
+header {
+    padding: 10px 50px 10px  0;
+    background-color:  var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+     /*I think this is for Safari users
+    position: -webkit-sticky;*/
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1{
+    background-color: var(--secondary-color);
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 36px;
+    font-weight: bold;    
+}
+
+header h1:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 50%);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header a:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 50%);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 5px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header nav ul li:hover {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+header nav ul li a {
+    padding: 10px 10px;
+    color: var(--secondary-color);
+    font-size: 24px;
+  
+    text-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+}
+
+
+
 /*Hero styles*/
 
+#hero {
+    background-image: url("../images/portfolio-background-stretch.jpg");
+    background-size: cover;
+    height: 350px;
+    padding: 20px 50px;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;   
+}
+
+#hero h2 {
+    color: var(--secondary-color);
+    background: rgba(15, 42, 94, 70%);
+    padding: 25px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 50%);
+}
+
+
+
+
+
 /*About styles*/
+
+#about img {
+    width: 20%;
+}
 
 /*Work styles*/
 
