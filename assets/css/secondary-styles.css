@@ -1,0 +1,21 @@
+.hero {
+    background-position: top;
+    height: 300px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+body {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+article h2 {
+    color: var(--primary-color);
+    font-size:  48px;
+    font-weight: normal;
+}
+
+article span {
+    font-weight: bold;
+    color: black;
+}
