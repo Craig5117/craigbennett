@@ -26,41 +26,50 @@
         </div>
     </section>
     <section id="about">
-        <div class="about-content">
-            <div>
+        <div class="content">
+            <div class="title-box"> <!--child 1-->
                 <h2>About Me</h2>
             </div>
-            <div class="about-info">
+            <div class="img-box">
+                <img src="./assets/images/my-pic.jpg" alt="Craig Bennett" />
+            </div>
+                
+            <div class="bio-box">
                 <p>Before settling in the beautiful Appalachian Mountains of East Tennessee, I spent several years living and working in the South Pacific. While I wasn't yet developing apps at that time, my work as a linguist required high degree of adaptability and a strong attention to detail. I have experience working with people of other cultures, even in multiple languages. I work hard and strive for excellence in everything that I do. In my previous work translating texts into Pacific languages, I was constantly faced with new and challenging issues that required creative problem solving skills. I continue to use those problem solving skills in my career as a web developer.</p>
-                <p>When I am not working, I enjoy spending time with my family, hiking, fishing, and practicing martial arts.</p>
+                <p>When I am not working, I enjoy spending time with my family, hiking, fishing, gaming, and practicing martial arts.</p>
                 <p>I am ready apply my skills and tenacity to help you solve your web problems.</p>
             </div>
-            <img src="./assets/images/my-pic.jpg" alt="Craig Bennett">
+            
+            
         </div>
     </section>
     <!--Work Section (3x3 grid)-->
     <section id="work">
-        <div>
-            <h2>My Work</h2>
-        </div>
-        <div class="work-wrapper">
-            <div class="work-container">
-                <div class="grid-item item-1">
-                    <img src="./assets/images/run-buddy-pic.jpg" alt="Run Buddy web page.">
+        <div class="content"> <!--Parent-->
+            <div class="title-box"> <!--child 1-->
+                <h2>My Work</h2>
+            </div>
+            <div class="grid-box"> <!--child 2-->
+                <div class="work-container">
+                    <div class="grid-item item-1">
+                        <img src="./assets/images/run-buddy-pic.jpg" alt="Run Buddy web page.">
+                    </div>
+                    <div class="grid-item item-2"></div>
+                    <div class="grid-item item-3"></div>
+                    <div class="grid-item item-4"></div>
+                    <div class="grid-item item-5"></div>
                 </div>
-                <div class="grid-item item-2"></div>
-                <div class="grid-item item-3"></div>
-                <div class="grid-item item-4"></div>
-                <div class="grid-item item-5"></div>
             </div>
         </div>
 
     </section>
+    <!--Wrapping links in p will make them block level-->
+    <!--
     <section id="contact">
         <div>
             <h2>Contact Me</h2>
         </div>
-        <!--Wrapping links in p will make them block level-->
+        
         <div>
             <ul>
                 <li></li>
@@ -70,6 +79,6 @@
             </ul>
         </div>
         <a href="tel:4235240127">423-524-0127</a>
-    </section>
+    </section>-->
 </body>
 </html>
