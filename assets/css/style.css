@@ -185,8 +185,11 @@ header nav ul li a {
     margin-right: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr) minmax(150px);
-    grid-gap: 20px;
-   
+    grid-gap: 20px;  
+}
+
+.work-container a {
+    text-decoration: none;
 }
 
 .grid-item {
@@ -286,6 +289,29 @@ header nav ul li a {
     border-bottom: 2px solid var(--primary-color);
 }
 
+@keyframes color-shift {
+    from {
+        color: var(--primary-color);
+    }
+    
+    50% {
+        color: var(--tertiary-color);
+    }
+
+    to {
+        color: var(--primary-color);
+    }
+  }
+
+.coming-soon {
+    font-size: 10vw;
+    transform: rotate(-20deg);
+    color:  var(--primary-color);
+    padding-top: 150px;
+    padding-left: 100px;
+    animation: color-shift 1s infinite;
+    text-shadow: 0 0 40px rgba(14, 6, 253, 0.5);
+}
 
 /*Media Queries*/
 /*This fixed a ahem positioning issue with my cool subtitle ;)*/
@@ -374,7 +400,7 @@ header nav ul li a {
     }
     
     .align-all {
-        max-width: 95%)
+        max-width: 95%;
     }
        
     .title-box h2 {
