@@ -209,18 +209,15 @@ header nav ul li a {
 
 .grid-label {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    display: flex;
-    flex-wrap: wrap;
-    
-    
+    width: 100%;
+    color: var(--primary-color);    
     margin-bottom: 20px;
     padding: 10px 10px 10px 10px;
 }
 
 .grid-label h2 {
     font-size: 24px;
-    width: 100%;
+    width: 80%;
 }
 
 
@@ -381,6 +378,12 @@ header nav ul li a {
     }
 }
 
+/*Screen sizes smaller than 575px*/
+@media screen and (max-width: 768px) {
+    .grid-label {
+       visibility: hidden;
+    }
+}    
 /*Screen sizes smaller than 575px*/
 @media screen and (max-width: 575px) {
     
