@@ -225,7 +225,7 @@ header nav ul li a {
 
 
 .grid-item.item-1{
-    background-image: url("../images/run-buddy-pic.jpg");
+    background-image: url("../images/off-the-beaten-path.jpg");
     background-size: cover;
     width: 100%;
     
@@ -240,10 +240,10 @@ header nav ul li a {
 }
 
 .grid-item.item-2 {
-    background-image: url("../images/led-placeholder.jpg");
+    background-image: url("../images/weather-dashboard.png");
 }
 .grid-item.item-3 {
-    background-image: url("../images/calculator-placeholder.jpg");
+    background-image: url("../images/run-buddy-pic.jpg");
 } 
 .grid-item.item-4 {
     background-image: url("../images/pastel-placeholder.jpg");
