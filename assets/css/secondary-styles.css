@@ -11,7 +11,6 @@ body {
 }
 
 
-
 article {
     width: 88%;
     margin: 0 auto 40px auto;
@@ -68,6 +67,14 @@ article ul li {
   
 }
 
+#contact-info a {
+    line-height: 1.5em;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: blue;
+}
+
 .work, .ed, .skills {
     
     border-top: 3px dotted var(--primary-color);
@@ -92,10 +99,10 @@ article ul li {
         margin-right: 30px;
     }
 
-    article address {
+    #contact-info a {
         font-size: 3vw;
     }
-
+    
     article ul {
         margin-left: 80px;
         margin-right: 40px;
