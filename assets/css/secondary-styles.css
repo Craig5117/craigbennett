@@ -6,10 +6,12 @@
 }
 
 body {
-    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h2, h3, h4, h5 {
+    text-align: center;
+}
 
 article {
     width: 88%;
@@ -21,7 +23,7 @@ article {
 }
 article h2 {
     color: var(--primary-color);
-    font-size:  4vw;
+    font-size:  3vw;
     padding-top: 20px;
 }
 
@@ -44,28 +46,56 @@ article h3 {
     font-weight: bold;
 }
 
+/* article .skills h3 {
+    text-decoration: none;
+} */
+
+
 article p {
     text-align: left;
     margin: 40px 150px;
     font-size: 1.55vw;
 }
 
-article ul {
-    
-    columns: 2;
-    
-    text-align: left;
-    margin: 0 auto;
-    
-    padding: 3em;
+article .skills .skills-container {
+   text-align: left;
+   align-self: center;
+   margin: 2em
 }
 
+article .skills h3,
+article .skills p {
+    font-size: 1.55vw;
+    text-decoration: none;
+    display: inline;
+    margin: 1em;
+}
+
+.other-skills p {
+    text-align: left;
+}
+
+.list-container {
+   align-self: center;
+   font-size: 1.25vw;
+}
+
+article ul {
+    
+    /* columns: 2; */
+    
+    /* text-align: left; */
+    /* width: 70%; */
+    
+    margin: 1em;
+}
+/* 
 article ul li {
     font-size: 1.55vw;
     margin: 0 auto;
     width: 70%;
   
-}
+} */
 
 #contact-info a {
     line-height: 1.5em;
@@ -75,17 +105,25 @@ article ul li {
     color: blue;
 }
 
-.work, .ed, .skills {
+.work, .ed, .skills, .other-skills {
     
     border-top: 3px dotted var(--primary-color);
     
     
 }
 
-.skills, .interests {
+.skills, .interests, .other-skills, .experience {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.achievements {
+    margin: 0 10em;
+}
+
+.interests {
+    align-items: center;
 }
 
 
@@ -102,16 +140,26 @@ article ul li {
     #contact-info a {
         font-size: 3vw;
     }
+
+    article .skills .skills-container {
+        font-size: 3vw;
+    }
     
+    article .skills h3,
+    article .skills p,
     article ul {
-        margin-left: 80px;
-        margin-right: 40px;
+    font-size: 2vw;
     }
 
-    article ul li {
+    /* article ul {
+        margin-left: 80px;
+        margin-right: 40px;
+    } */
+
+    /* article ul li {
         font-size: 3vw;
         
-    }
+    } */
 
     article h3, h4, h5 {
         font-size: 3vw;
