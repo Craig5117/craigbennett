@@ -216,8 +216,7 @@ header nav ul li a {
 }
 
 .grid-label h2 {
-    font-size: 24px;
-    width: 80%;
+    font-size: 1.2em;
 }
 
 
@@ -243,10 +242,10 @@ header nav ul li a {
     background-image: url("../images/run-buddy-pic.jpg");
 } 
 .grid-item.item-4 {
-    background-image: url("../images/pastel-placeholder.jpg");
+    background-image: url("../images/roster-gen-pic.png");
 } 
 .grid-item.item-5 {
-    background-image: url("../images/surf-placeholder.jpg");
+    background-image: url("../images/slp-reach.png");
 }
 
 
