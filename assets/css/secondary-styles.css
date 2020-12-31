@@ -44,6 +44,7 @@ article h3 {
     color: rgb(2, 2, 98);
     text-decoration: underline;
     font-weight: bold;
+    margin-top: 2em;
 }
 
 /* article .skills h3 {
@@ -60,7 +61,7 @@ article p {
 article .skills .skills-container {
    text-align: left;
    align-self: center;
-   margin: 2em
+   margin: 2em;   
 }
 
 article .skills h3,
@@ -77,7 +78,13 @@ article .skills p {
 
 .list-container {
    align-self: center;
-   font-size: 1.25vw;
+   font-size: 1.3vw;
+   width: 60%;
+}
+
+.achievements {
+    font-size: 1.3vw;
+    font-weight: bold;
 }
 
 article ul {
@@ -89,13 +96,16 @@ article ul {
     
     margin: 1em;
 }
-/* 
+
 article ul li {
-    font-size: 1.55vw;
-    margin: 0 auto;
-    width: 70%;
-  
-} */
+    margin-bottom: .5em;
+}
+
+.info-wrapper {
+    margin-top: 1em;
+    display:flex;
+    justify-content: center;
+}
 
 #contact-info a {
     line-height: 1.5em;
@@ -103,6 +113,10 @@ article ul li {
     padding: 10px;
     margin: 10px;
     color: blue;
+}
+
+#contact-info {
+    text-align: center;
 }
 
 .work, .ed, .skills, .other-skills {
