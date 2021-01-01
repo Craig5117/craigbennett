@@ -6,9 +6,9 @@
 }
 
 :root {
-    --primary-color: #0f2a5e;
-    --secondary-color: #a3aac9;
-    --tertiary-color:  rgb(234, 238, 255);
+    --primary-color: #0c3d98;
+    --secondary-color: #dfe5ff;
+    --tertiary-color:  rgb(241, 244, 255);
 }
 /*General styles*/
 
@@ -33,7 +33,7 @@ header {
 }
 
 header h1{
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     padding-left: 50px;
     padding-right: 10px;
     font-size: 36px;
@@ -65,12 +65,12 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--tertiary-color);
 }
 
 header nav ul li a {
     padding: 10px 10px;
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     font-size: 24px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 50%);
 }
@@ -94,7 +94,7 @@ header nav ul li a {
 }
 
 .hero h2 {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     background: rgba(15, 42, 94, 70%);
     padding: 25px;
     text-align: center;
@@ -185,6 +185,7 @@ header nav ul li a {
     margin-right: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr) minmax(150px);
+    grid-auto-rows: 1fr;
     grid-gap: 20px;  
 }
 
@@ -195,30 +196,80 @@ header nav ul li a {
 .grid-item {
     display: flex;
     border: 10px solid var(--secondary-color);
+    border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 50%);
     align-items: flex-end;
     background-blend-mode: soft-light;
-    transition: all 0.5s;
+    position: relative;
+    /* transition: all 0.5s; */
     text-decoration: none;
+    overflow: visible;
 }
 
-.grid-item:hover {
+
+/* .grid-item:hover .grid-label::after{
     background-color:  rgba(142, 187, 253, 0.3);
+    opacity: 1;
 }
 
+.grid-label::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( rgba(252, 225, 56, 0.3), var(--secondary-color));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.9s;
+} */
 
 .grid-label {
     background-color: var(--secondary-color);
-    width: 100%;
+    
+    width: 12vw;
     color: var(--primary-color);    
     margin-bottom: 20px;
+    margin-left: -3px;
     padding: 10px 10px 10px 10px;
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+/*     
+    top: 200px; */
+    transition-duration: 0.6s;
+}
+
+.grid-item:hover .grid-label {
+    /* transform: translate(0px, -200px); */
+    opacity: 0;
 }
 
 .grid-label h2 {
     font-size: 1.2em;
 }
 
+.grid-description {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: -2px;
+    padding: 1em;
+    /* position: relative; */
+    /* top: 200px; */
+    opacity: 0;
+    transition-duration: .6s;
+    transition-property: opacity;
+}
+
+.grid-item:hover .grid-description {
+    /* transform: translate(0px, -200px); */
+    opacity: 1;
+    
+    
+}
 
 .grid-item.item-1{
     background-image: url("../images/off-the-beaten-path.jpg");
@@ -267,13 +318,13 @@ header nav ul li a {
 .contact-links a {
     margin: 5px;
     
-    border-bottom: 2px solid var(--tertiary-color);
+    border-bottom: 2px solid var(--secondary-color);
     padding: 10px 10px;
     text-decoration: none;
     color: var(--primary-color);
     font-size: 24px;
     display: inline-block;
-    background-color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 50%);
     border-radius: 10px;
     
