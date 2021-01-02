@@ -234,18 +234,21 @@ header nav ul li a {
     margin-left: -3px;
     padding: 10px 10px 10px 10px;
     position: absolute;
-    z-index: 1;
     opacity: 1;
     bottom: 0;
     left: 0;
-/*     
+    
+    /* animation: animate 1s forwards; */
+/*  
     top: 200px; */
-    transition-duration: 0.6s;
+    transition-duration: .6s;
 }
 
 .grid-item:hover .grid-label {
     /* transform: translate(0px, -200px); */
+   
     opacity: 0;
+    /* z-index: -1; */
 }
 
 .grid-label h2 {
@@ -255,6 +258,7 @@ header nav ul li a {
 .grid-description {
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    font-size: 1em;
     margin: -2px;
     padding: 1em;
     /* position: relative; */
@@ -266,10 +270,36 @@ header nav ul li a {
 
 .grid-item:hover .grid-description {
     /* transform: translate(0px, -200px); */
-    opacity: 1;
-    
-    
+    opacity: 1;  
 }
+
+.project-link-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.demo-link, .repo-link {
+    background-color: var(--primary-color);
+    display: block;
+    padding: .2em .5em;
+    color: var(--secondary-color);
+    margin-top: .3em;
+    position: relative;
+    
+    border-radius: 5px;  
+    z-index: 5;
+     
+}
+
+.demo-link:hover, .repo-link:hover {
+    box-shadow:  0 0 10px rgb(140, 136, 255);    
+
+}
+
+/* .grid-item:active .demo-link, .grid-item:active .repo-link {
+    pointer-events: auto;
+} */
+
 
 .grid-item.item-1{
     background-image: url("../images/off-the-beaten-path.jpg");
@@ -428,10 +458,26 @@ header nav ul li a {
     }
 }
 
-/*Screen sizes smaller than 575px*/
+/*Screen sizes smaller than 768px*/
 @media screen and (max-width: 768px) {
     .grid-label {
        visibility: hidden;
+    }
+    .grid-description {
+        opacity: 1;
+        padding: 0 .5em;
+        width: 78vw;
+    }
+    .grid-description p {
+        display: none;
+    }
+    .demo-link {
+        margin-right: 4em;
+        margin-left: 1em;
+    }
+    .repo-link {
+        margin-right: 1em;
+        margin-left: 4em;
     }
 }    
 /*Screen sizes smaller than 575px*/
@@ -476,5 +522,9 @@ header nav ul li a {
 
     .grid-item p {
         font-size: 3vw;
+    }
+
+    .grid-description {
+        width: 76vw; 
     }
 }
