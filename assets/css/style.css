@@ -230,7 +230,7 @@ header nav ul li a {
 } */
 
 .grid-label {
-    background-color: var(--secondary-color);
+    background-color: rgba(223, 229, 255, .85);
     
     width: 12vw;
     color: var(--primary-color);    
@@ -306,7 +306,7 @@ header nav ul li a {
 
 
 .grid-item.item-1{
-    background-image: url("../images/off-the-beaten-path.jpg");
+    background-image: url("../images/slp-goalden-pic.png");
     background-size: cover;
     width: 100%;
     
@@ -324,7 +324,7 @@ header nav ul li a {
     background-image: url("../images/weather-dashboard.png");
 }
 .grid-item.item-3 {
-    background-image: url("../images/run-buddy-pic.jpg");
+    background-image: url("../images/off-the-beaten-path.jpg");
 } 
 .grid-item.item-4 {
     background-image: url("../images/roster-gen-pic.png");
